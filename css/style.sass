@@ -1,0 +1,39 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    background-color: #292929
+    color: #fff
+
+main    
+    display: flex
+    justify-content: center
+    align-items: center
+    min-height: 100vh
+    label
+        position: relative
+        width: 150px
+        height: 75px
+        background-color: #212121
+        border-radius: 10px
+        transition: .5s
+        input[type=checkbox]
+            //width: 75px
+            //height: 75px
+            appearance: none
+            &:checked ~ span           
+                left: 75px
+                &
+        span
+            position: absolute
+            top: 0
+            left: 0
+            width: 75px
+            height: 75px
+            background-color: #333
+            border: 6px solid #212121
+            border-radius: 14px
+            cursor: pointer
+            transition: 0.5s
