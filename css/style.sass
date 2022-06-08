@@ -18,25 +18,26 @@ main
         height: 75px
         background-color: #212121
         border-radius: 10px
-        transition: .5s
-        //pointer-events: none        
-        span           
+        input[type="checkbox"]
+            position: absolute
+            appearance: none
+            background-color: #333
             width: 75px
-            height: 75px  
-            cursor: pointer
-            transition: 0.5s
-            input
-                position: absolute
-                top: 0
-                left: 0
-                background-color: #333
-                width: 75px
-                height: 75px
-                border: 6px solid #212121
-                border-radius: 14px
-                appearance: none
-                transition: 0.5s
-                &:checked                 
-                    left: 75px
-                    cursor: crosshair
-                
+            height: 75px
+            border: 6px solid #212121
+            border-radius: 14px
+            cursor: crosshair
+            transition: .5s
+            &:checked
+                left: 75px
+                cursor: crosshair
+                transition: .5s
+                &::before
+                    font-family: "FontAwesome"
+                    content: '\f185'
+            &::before
+                font-family: "FontAwesome"
+                content: '\f186'
+                font-style: normal
+                font-size: 4em
+                text-align: center

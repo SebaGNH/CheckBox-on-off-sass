@@ -21,29 +21,33 @@ main label {
   height: 75px;
   background-color: #212121;
   border-radius: 10px;
-  transition: 0.5s;
 }
-main label span {
-  width: 75px;
-  height: 75px;
-  cursor: pointer;
-  transition: 0.5s;
-}
-main label span input {
+main label input[type=checkbox] {
   position: absolute;
-  top: 0;
-  left: 0;
+  appearance: none;
   background-color: #333;
   width: 75px;
   height: 75px;
   border: 6px solid #212121;
   border-radius: 14px;
-  appearance: none;
+  cursor: crosshair;
   transition: 0.5s;
 }
-main label span input:checked {
+main label input[type=checkbox]:checked {
   left: 75px;
   cursor: crosshair;
+  transition: 0.5s;
+}
+main label input[type=checkbox]:checked::before {
+  font-family: "FontAwesome";
+  content: "\f185";
+}
+main label input[type=checkbox]::before {
+  font-family: "FontAwesome";
+  content: "\f186";
+  font-style: normal;
+  font-size: 4em;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
