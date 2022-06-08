@@ -23,23 +23,27 @@ main label {
   border-radius: 10px;
   transition: 0.5s;
 }
-main label input[type=checkbox] {
-  appearance: none;
-}
-main label input[type=checkbox]:checked ~ span {
-  left: 75px;
-}
 main label span {
+  width: 75px;
+  height: 75px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+main label span input {
   position: absolute;
   top: 0;
   left: 0;
+  background-color: #333;
   width: 75px;
   height: 75px;
-  background-color: #333;
   border: 6px solid #212121;
   border-radius: 14px;
-  cursor: pointer;
+  appearance: none;
   transition: 0.5s;
+}
+main label span input:checked {
+  left: 75px;
+  cursor: crosshair;
 }
 
 /*# sourceMappingURL=style.css.map */

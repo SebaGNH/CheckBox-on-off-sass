@@ -19,21 +19,24 @@ main
         background-color: #212121
         border-radius: 10px
         transition: .5s
-        input[type=checkbox]
-            //width: 75px
-            //height: 75px
-            appearance: none
-            &:checked ~ span           
-                left: 75px
-                &
-        span
-            position: absolute
-            top: 0
-            left: 0
+        //pointer-events: none        
+        span           
             width: 75px
-            height: 75px
-            background-color: #333
-            border: 6px solid #212121
-            border-radius: 14px
+            height: 75px  
             cursor: pointer
             transition: 0.5s
+            input
+                position: absolute
+                top: 0
+                left: 0
+                background-color: #333
+                width: 75px
+                height: 75px
+                border: 6px solid #212121
+                border-radius: 14px
+                appearance: none
+                transition: 0.5s
+                &:checked                 
+                    left: 75px
+                    cursor: crosshair
+                
